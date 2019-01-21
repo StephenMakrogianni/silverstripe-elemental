@@ -266,7 +266,6 @@ class ElementalAreasExtension extends DataExtension
         }
 
         $ownerClass = get_class($this->owner);
-        $tableName = $this->owner->getSchema()->tableName($ownerClass);
         $elementalAreas = $this->owner->getElementalRelations();
         $schema = $this->owner->getSchema();
 
