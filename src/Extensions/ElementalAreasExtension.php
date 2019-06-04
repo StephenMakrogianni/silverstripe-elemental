@@ -275,7 +275,7 @@ class ElementalAreasExtension extends DataExtension
         if (!$this->supportsElemental()) {
             return;
         }
-
+        ini_set('memory_limit', '-1');
         $this->owner->extend('onBeforeRequireDefaultElementalRecords');
 
         $ownerClass = get_class($this->owner);
